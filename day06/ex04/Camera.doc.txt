@@ -1,0 +1,16 @@
+<- camera ----------------------------------------------------------------------
+The camera class handles vectex.
+
+She wait a array with the key:
+	=> 'origin',
+	=> 'orientation',
+	=> 'matrix',
+	=> ’height’,
+	=> ’width’,
+	=> ratio,
+	=> proj,
+
+
+	1 : exchange(Matrix $tab_matrix);
+	2 : watchVertex(Vertex $worldVertex);
+---------------------------------------------------------------------- camera ->

@@ -1,0 +1,24 @@
+<- Matrix ----------------------------------------------------------------------
+The Matrix class handles vectex.
+
+She wait a array with the key:
+	=> 'vtcX' : X vector
+	=> 'vtcY' : Y vector
+	=> 'vtcZ' : X vector
+	=> ’vtc0’ :  W vector 
+	=> ’scale’,
+	=> ’preset’,
+	=> ’angle’,
+	=> fov,
+	=> near, 
+	=> far
+
+	1 : init($init_matrix);
+	2 : translation();
+	3 : rotation_x();
+	4 : rotation_y();
+	5 : rotation_z();
+	6 : projection();
+	7 : mult(Matrix $mat);
+	8 : transformVertex();
+---------------------------------------------------------------------- Matrix ->
