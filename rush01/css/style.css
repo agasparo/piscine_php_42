@@ -1,0 +1,191 @@
+#plateau {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+#carac {
+	background-color: rgba(53, 53, 138, 0.69);
+	border-radius: 25px;
+	color: white;
+	position: fixed;
+	top: 25%;
+	left: 37.5%;
+	width: 25%;
+	height: 35%;
+	padding: 20px;
+	border: 3px solid rgba(195, 195, 195, 0.54);
+	font-family: fantasy;
+	display: none;
+	z-index: 200;
+}
+
+td[name=Fregate2] {
+	background-color: grey;
+}
+
+td[name=Destroyer2] {
+	background-color: grey;
+}
+
+td[name=Cuirasse2] {
+	background-color: grey;
+}
+
+td[name=exploreur2] {
+	background-color: grey;
+}
+
+td[name=Big_boom2] {
+	background-color: grey;
+}
+
+.go {
+	width: 10px; height: 10px;
+	background-color : rgba(0, 255, 0, 0.3);
+	cursor : pointer;
+}
+
+.vaisseau {
+	width: 10px;
+	height: 10px;
+	background-color: blue;
+	cursor : pointer;
+}
+
+.vide {
+	width: 10px; height: 10px;
+	background-color: transparent;
+}
+
+.att {
+	background-color : rgba(255,165,0, 0.3);
+	cursor: pointer;
+}
+
+.cible {
+	background-color : rgba(255,0,0, 0.3);
+	cursor: pointer;
+}
+
+.missile {
+	background-color: red;
+	box-shadow: 0 0 10px 5px red;
+}
+
+#dammage {
+	z-index: 200;
+	display: none;
+	text-align: center;
+	position: fixed;
+	top: 25%;
+	left: 0;
+	width: 100%;
+	height: 25%;
+	background-color: transparent;
+}
+
+.dam {
+	color: red;
+	font-size: 32px;
+}
+
+.dam1 {
+	color: white;
+	font-size: 32px;
+}
+
+#charge {
+	z-index: 200;
+	position: fixed;
+	background-color: black;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.img_load {
+	position: fixed;
+	top: 40%;
+	left: 45%;
+}
+
+.h1_load {
+	position: fixed;
+	top: 25%;
+	width: 100%;
+	font-family: fantasy;
+	text-align: center;
+	font-size: 65px;
+	color:white;
+}
+
+#cine {
+	position: fixed;
+	background-color: black;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+	display: none;
+}
+
+#text {
+	position: absolute;
+	bottom: 10%;
+	color: #FFF;
+	width: 100%;
+	font-family: fantasy;
+	text-align: center;
+}
+
+.images_cine {
+	position: absolute;
+	left: 20%;
+	width: 60%;
+	top: 10%;
+	height: 70%;
+}
+
+.asteroid {
+	width: 10px;
+	height: 10px;
+	background-image: url("../img/as.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+.btn {
+	background-color: transparent;
+	border-color: white;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#no_tire {
+	background-color: transparent;
+	color: white;
+	font-family: fantasy;
+	cursor: pointer;
+	border-color: white;
+}
+
+#no_deplace {
+	background-color: transparent;
+	color: white;
+	font-family: fantasy;
+	cursor: pointer;
+	border-color: white;
+}
+
+#res_img_user {
+    width : 10%;
+}
