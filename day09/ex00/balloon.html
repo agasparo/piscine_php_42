@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="balloon" style="background-color: red;width: 200px;height: 200px;border-radius: 50%;"></div>
+	<script type="text/javascript">
+		var bal = document.getElementById('balloon');
+		var taille = 200;
+		bal.onclick = function() {
+			bal.style.height = taille + 10 + 'px';
+			bal.style.width = taille + 10 + 'px';
+			taille = taille + 10;
+			if (taille > 420) {
+				bal.style.height = '200px';
+				bal.style.width = '200px';
+				taille = 200;
+			}
+			if (bal.style.backgroundColor == 'red')
+				bal.style.backgroundColor = 'green';
+			else if (bal.style.backgroundColor == 'green')
+				bal.style.backgroundColor = 'blue';
+			else if (bal.style.backgroundColor == 'blue')
+				bal.style.backgroundColor = 'red';
+		}
+
+			bal.onmouseout = function() {
+				if (taille > 200) {
+					taille = taille - 5;
+					bal.style.height = taille + 'px';
+					bal.style.width = taille + 'px';
+					if (bal.style.backgroundColor == 'blue')
+						bal.style.backgroundColor = 'green';
+					else if (bal.style.backgroundColor == 'green')
+						bal.style.backgroundColor = 'red';
+					else if (bal.style.backgroundColor == 'red')
+						bal.style.backgroundColor = 'blue';
+				}
+			}
+	</script>
+</body>
+</html>

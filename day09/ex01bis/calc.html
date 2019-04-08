@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<form>
+		<input type="text" name="nb1" id="nb1">
+		<select id="signe">
+		  <option value="+">+</option>
+		  <option value="-">-</option>
+		  <option value="/">/</option>
+		  <option value="*">*</option>
+		  <option value="%">%</option>
+		</select>
+		<input type="text" name="nb2" id="nb2">
+		<input type="submit" name="sub" id="sub" value="Try me!">
+	</form>
+	<script type="text/javascript">
+		setInterval(function(){ alert("Please, use me..."); }, 30000);
+
+		function isInt(n) {
+   			return (n % 1 === 0);
+		}
+
+		$("#sub").click(function(e){
+			e.preventDefault();
+			var nb = $("#nb1").val().trim();
+			var signe = $("#signe").val().trim();
+			var nb1 = $("#nb2").val();
+			if (nb >= 0 && nb1 >= 0 && isInt(nb) && isInt(nb1) && nb != "" && nb1 != "") {
+				nb1 = parseInt(nb1);
+				nb = parseInt(nb);
+				if (nb1 == 0 && (signe == '/' || signe == '%')) {
+					alert("It's over 9000!");
+					console.log("It's over 9000!");
+				} else {
+					if (signe == '+') {
+						console.log(nb + nb1);
+						alert(nb + nb1);
+					} else if (signe == '-') {
+						console.log(nb - nb1);
+						alert(nb - nb1);
+					} else if (signe == '/') {
+						console.log(nb / nb1);
+						alert(nb / nb1);
+					} else if (signe == '*') {
+						console.log(nb * nb1);
+						alert(nb * nb1);
+					} else if (signe == '%') {
+						console.log(nb % nb1);
+						alert(nb % nb1);
+					}
+				}
+			} else {
+				alert('Error :(');
+			}
+		});
+	</script>
+</body>
+</html>

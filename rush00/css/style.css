@@ -1,0 +1,332 @@
+body {
+	margin: 0;
+}
+
+#header {
+	text-align: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 8%;
+	background-color: #130E0A;
+	box-shadow: 1px 1px 12px #555;
+}
+
+#title {
+	position: relative;
+	font-size: 2em;
+	color : #C0C0C0;
+	cursor: pointer;
+}
+
+#title:hover {
+	color: #FFF;
+}
+
+#co {
+	font-size: 1em;
+	color : #130E0A;
+	cursor: pointer;
+}
+
+#co:hover {
+	color: #C0C0C0;
+}
+
+#close_form {
+	position: absolute;
+	right: 5%;
+	top: 0;
+	cursor: pointer;
+	color : red;
+}
+
+.form_in {
+	position: relative;
+	width: 30%;
+	height: 5%;
+	border-top: none;
+	border-right: none;
+	border-color: #C0C0C0;
+	box-shadow:none;
+	outline: none;
+}
+
+.from_sub {
+	background-color: #130E0A;
+	width: 15%;
+	height: 5%;
+	color: #C0C0C0;
+	outline: none;
+	cursor: pointer;
+}
+
+#left_deroule {
+	position: absolute;
+	left: 2%;
+	top: 30%;
+	border: 1px solid #C0C0C0;
+	width: 2%;
+	height: 30%;
+	border-radius: 2px;
+	cursor: pointer;
+	color: #C0C0C0;
+}
+
+#left_deroule:hover {
+	border: 1px solid #FFF;
+	color: #FFF;
+}
+
+#products {
+	text-align: center;
+	position: fixed;
+	left: 0;
+	top: 15%;
+	width: 100%;
+	height: 80%;
+	overflow: auto;
+}
+
+#bg_a {
+	position: fixed;
+	z-index: 2;
+	background-color: rgba(110,110,110,0.5);
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+#show_a {
+	text-align: center;
+	position: fixed;
+	top: 25%;
+	left: 25%;
+	border-radius: 5px;
+	z-index: 3;
+	width: 50%;
+	height: 50%;
+	background-color: #fff;
+	box-shadow: 1px 1px 12px #555;
+}
+
+#bg_ic {
+	position: fixed;
+	z-index: 2;
+	background-color: rgba(110,110,110,0.5);
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+#show_ic {
+	text-align: center;
+	position: fixed;
+	top: 25%;
+	left: 25%;
+	border-radius: 5px;
+	z-index: 3;
+	width: 50%;
+	height: 50%;
+	background-color: #fff;
+	box-shadow: 1px 1px 12px #555;
+}
+
+#close {
+	cursor: pointer;
+}
+
+.img_sh {
+	width: 80%;
+	height: 60%;
+}
+
+.prod {
+	position: relative;
+	border-radius: 5px;
+	margin-left: 4%;
+	margin-top: 5%;
+	float: left;
+	width: 20%;
+	height: 45%;
+	overflow: auto;
+	box-shadow: 1px 1px 12px #555;
+}
+
+.img_prod {
+	width: 90%;
+	height: 50%;
+}
+
+.titre {
+	width: 100%;
+
+}
+
+#pan {
+	cursor: pointer;
+}
+
+#pan:hover {
+	color: #C0C0C0;
+}
+
+.img_pin {
+	width: 100px;
+	height: 70px;
+}
+
+#max_size {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	overflow: auto;
+	height: 90%;
+	width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+tr:hover {
+	background-color: #CCC;
+}
+
+#close_p {
+	position: absolute;
+	right: 5%;
+	top: 0;
+	cursor: pointer;
+	color : red;
+}
+
+#close {
+	position: absolute;
+	right: 5%;
+	top: 0;
+	cursor: pointer;
+	color : red;
+}
+
+#buy {
+	cursor: pointer;
+}
+
+.suppr {
+	color: red;
+	cursor: pointer;
+}
+
+.supprime {
+	color: red;
+	cursor: pointer;
+}
+
+.Vald {
+	color: green;
+	cursor: pointer;
+}
+
+.reload {
+	color: blue;
+	cursor: pointer;
+}
+
+.supprime_user {
+	color: red;
+	cursor: pointer;
+}
+
+.Vald_user {
+	color: green;
+	cursor: pointer;
+}
+
+.reload_user {
+	color: blue;
+	cursor: pointer;
+}
+
+#navbar-left {
+	position: fixed;
+	background-color: #130E0A;
+	left: 0;
+	top: 0;
+	width: 15%;
+	height: 100%;
+	box-shadow: 1px 1px 12px #555;
+}
+
+.nav-title {
+	color: #C0C0C0;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+.nav-title:hover {
+	color: #FFF;
+}
+
+#load_here {
+	position: fixed;
+	top: 10%;
+	left: 20%;
+	width: 78%;
+	height: 80%;
+	overflow: auto;
+}
+
+#menu-list {
+	position: fixed;
+	top: 8%;
+	z-index: 2;
+	height: 98%;
+	width: 15%;
+	background-color: #FFF;
+	box-shadow: 1px 1px 12px #555;
+	color: #130E0A;
+	border: 1px solid #130E0A;
+	display: none;
+	text-align: left;
+	overflow: auto;
+}
+
+.cat_menu {
+	cursor: pointer;
+}
+
+.cat_menu:hover {
+	color: #C0C0C0;
+}
+
+.hr_cat {
+	background-color: #130E0A;
+}
+
+.co_menu {
+	color: #130E0A;
+	text-decoration: none;
+}
+.co_menu:hover {
+	color: #C0C0C0;
+}
+
+#myChart {
+	position: absolute;
+	left: 20%;
+	top: 45%;
+	max-width: 75%;
+	max-height: 50%;
+}
